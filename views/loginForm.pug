@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  // Form for login    
+  form#data(method='POST' action='/')
+    fieldset
+      legend Login
+      label Username
+      br
+      input#username(type='text' name='username' required='')
+      br
+      label Password
+      br
+      input#password(type='password' name='password' required='')
+      p
+      button.btn.btn-success.submit(type='submit') Login
+      p

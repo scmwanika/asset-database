@@ -1,0 +1,90 @@
+body {
+  /* Padding to prevent the content to go underneath the header */
+  padding-top: 100px;
+  /* Padding to prevent the content to go underneath the footer */
+  padding-bottom: 30px;
+  font: Calibri;
+  font-size: small;
+  font-weight: bolder;
+  background-color: grey;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+#message {
+  color: orange;
+  font-weight: bold;
+}
+
+#data {
+  width: 320px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+table {
+  width: 320px;
+  margin: 0 auto;
+}
+
+th {
+  color: orange;
+  text-align: right;
+}
+
+td 
+form {
+  text-align: left;
+}
+
+legend,
+label, 
+h6 {
+  color: orange;
+  margin-bottom: 0;
+  padding-left: 15px;
+}
+
+input[type='password'],
+input[type='email'],
+input[type='text'],
+input[type='number'],
+input[type='tel'],
+input[type='date'],
+input[type='file'],
+input[type='url'],
+select {
+  width: 310px;
+  padding: 0.75%;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  font-size: 12pt;
+  font-weight: bolder;
+  border: 1px solid grey;
+}
+
+input[type='radio'] {
+  width: 50px;
+}
+
+.order-details,
+.new-supply,
+.submit {
+  width: 97%;
+  margin-left: 5px;
+  border: none;
+  font-weight: bolder;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: orange;
+  text-align: center;
+  font-weight: bolder;
+}

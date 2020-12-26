@@ -1,0 +1,113 @@
+extends layout
+
+block content
+  style.
+    p,
+    #message {
+      text-align: center;
+      color: orange;
+    }
+
+  // Data Entry Form
+  form#data.section1(method='POST', action='/dtype')
+    fieldset
+      legend D Type
+      label ID:
+      br
+      input#id_(type='text' name='id_')
+      br
+      label Make:
+      br
+      input#make(type='text' name='make') 
+      br
+      label Model:
+      br
+      input#model(type='text' name='model')
+      br
+      label Rack Unit:
+      br
+      input#rackUnit(type='text' name='rackUnit')
+      br
+      label Weight:
+      br
+      input#weight(type='text' name='weight')
+      br
+      label PSU No:
+      br
+      input#psuNo(type='text' name='psuNo')
+      br
+      label Power:
+      br
+      input#power(type='text' name='power')
+      p
+      button.btn.btn-success.submit(type='submit') Register D Type
+      p
+        span#message
+
+  // Data Entry Form
+  form#data.section2(method='POST', action='/register-assets')
+    fieldset
+      legend Asset
+      label Customer Name:
+      br
+      input#customerName(type='text' name='customerName')
+      br
+      label Site:
+      br
+      input#site(type='text' name='site')
+      br
+      label Room:
+      br
+      input#room(type='text' name='room')
+      br
+      label Rack:
+      br
+      input#rack(type='text' name='rack')
+      br
+      label Rack Unit:
+      br
+      input#rackUnit(type='text' name='rackUnit')
+      br
+      label Device Name:
+      br
+      input#deviceName(type='text' name='deviceName')
+      br
+      label Serial Number:
+      br
+      input#serialNumber(type='text' name='serialNumber')
+      br
+      label Orientation:
+      br
+      input#orientation(type='text' name='orientation')
+      br
+      label Chassi Slot:
+      br
+      input#chassiSlot(type='text' name='chassiSlot')
+      br
+      label Status:
+      br
+      input#status(type='text' name='status')
+      br
+      label Functional Group:
+      br
+      input#functionalGroup(type='text' name='functionalGroup')
+      br
+      label PO:
+      br
+      input#po(type='text' name='po')
+      br
+      label Asset Tag:
+      br
+      input#assetTag(type='text' name='assetTag')
+      br
+      label IP:
+      br
+      input#ip(type='text' name='ip')
+      br
+      label Notes:
+      br
+      input#notes(type='text' name='notes')
+      p
+      button.btn.btn-success.submit(type='submit') Register Asset
+      p
+        span#message

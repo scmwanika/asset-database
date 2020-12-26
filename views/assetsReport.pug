@@ -1,0 +1,66 @@
+extends layout
+
+block content
+  style.
+    input[name='customerName'] {
+      width: 230px;
+    }
+  table.listing-table.table-info.table-striped
+    tr
+      td(colspan='2')
+        legend Asset List
+    tr
+      td(colspan='2')
+        form.search(action='/search')
+          button.btn.btn-white(type="submit") Search
+          input(name='customerName' placeholder='Customer Name')
+    each entry in asset
+      tr
+        th Customer Name:
+        td #{entry.customerName}
+      tr
+        th Site:
+        td #{entry.site}
+      tr
+        th Room:
+        td #{entry.room}
+      tr
+        th Rack:
+        td #{entry.rack}
+      tr
+        th Rack Unit:
+        td #{entry.rackUnit}
+      tr
+        th Device Name:
+        td #{entry.deviceName}
+      tr
+        th Serial Number:
+        td #{entry.serialNumber}
+      tr
+        th Orientation:
+        td #{entry.orientation}
+      tr
+        th Chassi Slot:
+        td #{entry.chassiSlot}
+      tr
+        th Status:
+        td #{entry.status}
+      tr
+        th Functional Group:
+        td #{entry.functionalGroup}
+      tr
+        th PO:
+        td #{entry.po}
+      tr
+        th Asset Tag:
+        td #{entry.assetTag}
+      tr
+        th IP:
+        td #{entry.ip}
+      tr
+        th Notes:
+        td #{entry.notes}
+      tr
+        td
+        td
+          br

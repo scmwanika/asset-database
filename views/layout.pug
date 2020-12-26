@@ -1,0 +1,41 @@
+doctype html
+header
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title assets database
+  // CSS
+  link(rel='stylesheet', href='bootstrap.min.css')
+  link(rel='stylesheet', href='style-main.css')
+  // Navbar
+  nav.navbar.navbar-expand-md.bg-dark.navbar-dark
+    a.navbar-brand(href='#')
+      h4 Assets Database
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#collapsibleNavbar')
+      span.navbar-toggler-icon
+    #collapsibleNavbar.collapse.navbar-collapse
+      // Links
+      ul.navbar-nav
+        // Dropdown
+        li.nav-item.dropdown
+          a#navbardrop.nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Menu:
+          .dropdown-menu
+            a.dropdown-item(href='/') Login
+            a.dropdown-item(href='/signup') Signup
+            a.dropdown-item(href='/register-assets') Register Asset
+            a.dropdown-item(href='/asset-list') Asset List
+    span#message
+    form(method='POST', action='/logout')
+      button.btn.btn-dark(type='submit') Logout
+block content
+  
+block footer
+p      
+footer
+  | &copy; Copyright 2020 Mwanika Stephen Crispin
+// Javascript
+script(src='jquery.min.js')
+script(src='popper.min.js')
+script(src='bootstrap.min.js')
+script(src='jquery.form.min.js')
+script(src='validatePost.js') 

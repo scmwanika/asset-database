@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  // Style Applied
+  link(rel='stylesheet', href='style-shopView.css')
+  // Data Entry Form
+  form#data(method='POST', action='/signup')
+    fieldset
+      legend Customer details
+      label Name:
+      br
+      input#customerName(type='text' name="customerName")
+      br
+      label Country:
+      br
+      input#country(type='text' name="country")
+      br
+      label City/Town:
+      br
+      input#city(type='text' name="city")
+      br
+      label Street:
+      br
+      input#street(type='text' name="street")
+      br
+      label Address:
+      br
+      input#address(type='text' name="address")
+      br
+      label Telephone:
+      br
+      input#telephone(type='text' name="telephone")
+      br
+      label Email:
+      br
+      input#email(type='email' name="email")
+      p
+      button.btn.btn-success.submit(type='submit') Signup
+      p
